@@ -45,7 +45,7 @@ define([
             jobInfo['jobClassName'] = jobClassName;
             $('#job').show();
             $('#progressBar').width('0%').text('fo');
-            $('#startButton').on('click', function () {
+            $('#startButton').off('click').on('click', function () {
                 runCounter = 0;
                 me.run();
             });
